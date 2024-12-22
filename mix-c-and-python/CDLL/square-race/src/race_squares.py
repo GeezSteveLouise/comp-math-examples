@@ -1,0 +1,3 @@
+from square_lib import square_in_sequence
+
+square_in_sequence.print_sequence_squares(1,10)
