@@ -1,3 +1,3 @@
-__all__ = ["square_in_sequence"]
+__all__ = ["square_lib"]
 
-from .square_in_sequence import *
+from .square_lib import *

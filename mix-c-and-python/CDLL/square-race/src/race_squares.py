@@ -1,7 +1,16 @@
-from square_lib import square_in_sequence
+from square_lib import square_lib
 
-square_in_sequence.print_sequence_squares(0,10)
+import time
 
-square_in_sequence.print_flat_squares(0,10)
+start_seq = time.time()
+square_lib.sequence_squares(0,10, True)
+end_seq = time.time()
 
-# write the timing mechanism for each call
+start_flat = time.time()
+square_lib.flat_squares(0,10, bool_print=True)
+end_flat = time.time()
+
+
+print("sequence: " + str(1000*(end_seq - start_seq)) + "ms")
+print("flat: " + str(1000*(end_flat - start_flat)) + "ms")
+
